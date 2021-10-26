@@ -1,0 +1,836 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  min-height: 100%;
+}
+html {
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+
+/* MOVIL */
+
+.grid-container {
+  display: grid;
+  gap: 0px;
+  grid-template:
+    "header" 70px
+    "navbar" 50px
+    "main" 900px
+    "service" 490px
+    "footer" 100px;
+}
+.grid-container-2 {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header" 70px
+    "navbar" 50px
+    "main" auto
+    "footer" 150px;
+}
+.grid-container-main {
+  display: grid;
+  gap: 0px;
+  grid-template:
+    "main1" 200px
+    "main2" 220px
+    "main3" 250px
+    "main4" 200px;
+}
+.grid-container-main-2 {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "main1-2" 270px 
+    "main2-2" 350px
+    "main4-2" 270px  
+    "main3-2" 350px    
+    "main6" 270px
+    "main5" 390px
+    "main8" 270px
+    "main7" 390px;
+}
+.grid-container-service {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "main-service-0" 60px
+    "main-service-1" 100px
+    "main-service-2" 100px
+    "main-service-3" 100px
+    "main-service-4" 100px;
+}
+.grid-contacto {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "contacto-1" 300px
+    "contacto-2" 300px;
+}
+.contacto-1 {
+  grid-area: contacto-1;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "telefono" 100px
+    "mail" 100px
+    "direccion" 100px;
+}
+.contacto-2 {
+  grid-area: contacto-2;
+}
+.telefono {
+  grid-area: telefono;
+  margin-left: 15px;
+}
+.mail {
+  grid-area: mail;
+  margin-left: 15px;
+}
+.direccion {
+  grid-area: direccion;
+  margin-left: 15px;
+}
+.iframe {
+  width: 100%;
+  padding: 10px;
+  border: 1px;
+}
+.header {
+  grid-area: header;
+  background-color: white;
+  text-align: center;
+}
+.navbar {
+  grid-area: navbar;
+}
+.navbar-2 {
+  width: 100%;
+}
+.main {
+  grid-area: main;
+}
+.service {
+  grid-area: service;
+}
+
+.footer {
+  margin-top: 10px;
+  grid-area: footer;
+  background-color: dimgrey;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+.main-1 {
+  grid-area: main1;
+  margin-bottom: 9%;
+}
+.main-2 {
+  grid-area: main2;
+  text-align: center;
+  margin-top: 10%;
+}
+.main-3 {
+  grid-area: main3;
+  text-align: center;
+  
+}
+.main-4 {
+  grid-area: main4;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+ .main1-2{
+     grid-area: main1-2;
+  }
+
+  .main2-2{
+    grid-area: main2-2;     
+    text-align: center;    
+
+  }
+  .main3-2{
+      grid-area: main3-2;
+      text-align: center;
+
+  }
+  .main4-2{
+      grid-area: main4-2;
+
+
+  }
+
+
+.main-5 {
+  grid-area: main5;
+  text-align: center;
+ 
+}
+.main-6 {
+  grid-area: main6;
+ 
+}
+.main-7 {
+  grid-area: main7;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.main-8 {
+  grid-area: main8;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.img-icon {
+  height: 100%;
+}
+.img-main {
+  width: 100%;
+  height: 200px;
+  align-content: center;
+}
+.img-main-2 {
+  margin-top: 8px;
+  width: 100%;
+  height: 270px;
+  align-content: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #164884;
+}
+
+.h1Servicios {
+  font-size: 35px;
+  color: #112d4e;
+  font-family: "Montserrat", sans-serif;
+  color: #164884;
+  margin-top: 5%;
+}
+.h1-bajada-2 {
+  font-size: 20px;
+  color: #112d4e;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.no-center {
+  text-align: left;
+  text-justify: auto;
+  margin-left: 1%;
+
+  
+}
+p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+.main-service-0 {
+  grid-area: main-service-0;
+  width: 100%;
+  float: left;
+  text-align: center;
+  
+}
+.main-service-1 {
+  grid-area: main-service-1;
+  width: 100%;
+  float: left;
+  background-color: rgba(3, 187, 199, 0.9);
+  text-align: center;
+  
+}
+.main-service-2 {
+  grid-area: main-service-2;
+  width: 100%;
+  float: left;
+  background-color: rgba(245, 244, 136, 0.9);
+  text-align: center;
+}
+.main-service-3 {
+  grid-area: main-service-3;
+  width: 100%;
+  float: left;
+  background-color: rgba(143, 215, 136, 0.9);
+  text-align: center;
+}
+.main-service-4 {
+  grid-area: main-service-4;
+  width: 100%;
+  float: left;
+  background-color: rgba(255, 122, 113, 0.9);
+  text-align: center;
+}
+.button1 {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em 1.2em;
+  border-radius: 2em;
+  margin-top: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4em;
+  color: rgb(37, 34, 34);
+  border-color: gray;
+  border-width: medium;
+  text-align: center;
+  transition: all 0.4s;
+}
+.button1:hover {
+  background-color: whitesmoke;
+  align-self: center;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+nav ul {
+  background: #164884;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+}
+ul li {
+  display: inline-block;
+  padding: 10px;
+  transition: all ease-in-out 250ms;
+}
+ul li:hover {
+  background: #112d4e;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "header header" 90px
+      "navbar navbar" 60px
+      "main main" auto
+      "service service" 520px
+      "footer footer " 150px /
+      auto auto;
+  }
+  .grid-container-2 {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "header header" 70px
+      "navbar navbar" 50px
+      "main main" 1700px
+      "footer footer" 150px /
+      auto auto;
+  }
+  .grid-container-main {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "main1" 450px
+      "main2" 200px
+      "main3" 300px
+      "main4" 450px;
+  }
+  .grid-container-main-2 {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "main1-2 main1-2" 250px
+      "main2-2 main2-2" 250px
+      "main3-2 main4-2" 300px
+      "main6 main5" 400px
+      "main8 main8" 200px
+      "main7 main7" 300px/
+       50%     50%;
+  }
+
+  .main1-2{
+     grid-area: main1-2;
+
+
+  }
+  .main2-2{
+    grid-area: main2-2;     
+    text-align: center;    
+
+  }
+  .main3-2{
+      grid-area: main3-2;
+      text-align: center;
+
+  }
+  .main4-2{
+      grid-area: main4-2;
+
+
+  }
+
+   .main-5 {
+    grid-area: main5;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .main-6 {
+    grid-area: main6;
+    text-align: center;
+  }
+  .main-7 {
+    grid-area: main7;
+    text-align: center;
+  }
+  .main-8 {
+    grid-area: main8;
+  }
+
+
+
+
+  .img-main-2 {
+    width: 100%;
+    height: 200px;
+   
+  }
+  .grid-container-service {
+    margin-bottom: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template:
+      "main-service-0 main-service-0" 100px
+      "main-service-1 main-service-2" 200px
+      "main-service-3 main-service-4" 200px /
+      50% 50%;
+  }
+  .grid-contacto {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "contacto-1 contacto-2" 390px/
+      40% 60%;
+  }
+  .contacto-1 {
+    grid-area: contacto-1;
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "telefono" 130px
+      "mail" 130px
+      "direccion" 130px;
+  }
+  .contacto-2 {
+    grid-area: contacto-2;
+  }
+  .telefono {
+    grid-area: telefono;
+    margin-left: 35px;
+  }
+  .mail {
+    grid-area: mail;
+    margin-left: 35px;
+  }
+  .direccion {
+    grid-area: direccion;
+    margin-left: 35px;
+  }
+  .iframe {
+    width: 80%;
+    height: 390px;
+    border: 1px;
+    margin-left: 30px;
+  }
+  .header {
+    grid-area: header;
+    background-color: white;
+  }
+
+  nav ul {
+    background: #164884;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+  }
+  ul li {
+    display: inline-block;
+    padding: 16px;
+    transition: all ease-in-out 250ms;
+  }
+  ul li:hover {
+    background: #112d4e;
+  }
+
+  ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .hide {
+    padding: 16px;
+    font-size: 22px;
+    background: #112d4e;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  .img-main {
+
+    width: 100%;
+    height: 450px;
+    align-content: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  .no-center {
+    text-align: left;
+    text-justify: auto;
+    height: 250px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+.main-1 {
+  grid-area: main1;
+  margin-bottom: 0%;
+}
+.main-2 {
+  grid-area: main2;
+  text-align: center;
+  margin-top: 0%;
+}
+.main-3 {
+  grid-area: main3;
+  text-align: center;
+  
+}
+.main-4 {
+  grid-area: main4;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+ 
+  .main-service-0 {
+    grid-area: main-service-0;
+    width: 100%;
+    float: left;
+    text-align: center;
+   
+  }
+  .main-service-1 {
+    grid-area: main-service-1;
+    width: 100%;
+    float: left;
+    background-color: rgba(3, 187, 199, 0.9);
+    align-items: center;
+    justify-content: center;
+  }
+  .main-service-2 {
+    grid-area: main-service-2;
+    width: 100%;
+    float: left;
+    background-color: rgba(245, 244, 136, 0.9);
+  }
+  .main-service-3 {
+    grid-area: main-service-3;
+    width: 100%;
+    float: left;
+    background-color: rgba(143, 215, 136, 0.9);
+  }
+  .main-service-4 {
+    grid-area: main-service-4;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 122, 113, 0.9);
+  }
+  .button1 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 1.2em;
+    border-radius: 2em;
+    margin-top: 75px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: rgb(37, 34, 34);
+    border-color: gray;
+    border-width: medium;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .button1:hover {
+    background-color: whitesmoke;
+    align-self: center;
+    font-size: 1.5em;
+    margin-top: 70px;
+  }
+
+
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "header header" 150px
+      "navbar navbar" 60px
+      "main main" 900px
+      "service service" 530px
+      "footer footer " 150px /
+      auto auto;
+  }
+  .grid-container-2 {
+    display: grid;
+    gap: 5px;
+    grid-template:
+      "header header" 70px
+      "navbar navbar" 50px
+      "main main" 1750px
+      "footer footer" 150px /
+      auto auto;
+  }
+  .grid-container-main {
+    display: grid;
+    gap: 0px;
+    grid-template:
+      "main1 main2" 400px
+      "main3 main4" 400px /
+      50% 50%;
+  }
+  .grid-container-main-2 {
+    display: grid;
+    gap: 5px;
+    grid-template:
+
+      "main1-2 main2-2" 420px
+      "main3-2 main4-2" 420px     
+      "main6 main5" 420px
+      "main7 main8" 420px/
+      50% 50%;
+  }
+  .grid-container-service {
+    margin-bottom: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template:
+      "main-service-0 main-service-0" 120px
+      "main-service-1 main-service-2" 200px
+      "main-service-3 main-service-4" 200px /
+      50% 50%;
+  }
+  .grid-contacto {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "contacto-1 contacto-2" 390px/
+      30% 70%;
+  }
+  .contacto-1 {
+    grid-area: contacto-1;
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "telefono" 130px
+      "mail" 130px
+      "direccion" 130px;
+  }
+  .contacto-2 {
+    grid-area: contacto-2;
+  }
+  .telefono {
+    grid-area: telefono;
+    margin-left: 35px;
+  }
+  .mail {
+    grid-area: mail;
+    margin-left: 35px;
+  }
+  .direccion {
+    grid-area: direccion;
+    margin-left: 35px;
+  }
+  .iframe {
+    width: 90%;
+    height: 390px;
+
+    border: 1px;
+  }
+
+  nav ul {
+    background: #164884;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+  }
+  ul li {
+    display: inline-block;
+    padding: 16px;
+    transition: all ease-in-out 250ms;
+  }
+  ul li:hover {
+    background: #112d4e;
+  }
+  ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .hide {
+    padding: 16px;
+    font-size: 22px;
+    background: #112d4e;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  .img-icon {
+    height: 100%;
+  }
+  .img-main {
+    width: 100%;
+    height: 400px;
+    align-content: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  .no-center {
+    text-align: left;
+    text-justify: auto;
+  }
+  h4 {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .main-1 {
+    grid-area: main1;
+  }
+  .main-2 {
+    grid-area: main2;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .main-3 {
+    grid-area: main3;
+    margin-right: 15px;
+    margin-top: 2%;
+  }
+  .main-4 {
+    grid-area: main4;
+  }
+  .main-service-0 {
+    grid-area: main-service-0;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 45px;
+  }
+  .main-service-1 {
+    grid-area: main-service-1;
+    width: 100%;
+    float: left;
+    background-color: rgba(3, 187, 199, 0.9);
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  .main-service-2 {
+    grid-area: main-service-2;
+    width: 100%;
+    float: left;
+    background-color: rgba(245, 244, 136, 0.9);
+  }
+  .main-service-3 {
+    grid-area: main-service-3;
+    width: 100%;
+    float: left;
+    background-color: rgba(143, 215, 136, 0.9);
+  }
+  .main-service-4 {
+    grid-area: main-service-4;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 122, 113, 0.9);
+  }
+
+  .button1 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em 1.2em;
+    border-radius: 2em;
+    margin-top: 70px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: rgb(37, 34, 34);
+    border-color: gray;
+    border-width: medium;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .button1:hover {
+    background-color: whitesmoke;
+    align-self: center;
+    font-size: 2em;
+    margin-top: 70px;
+  }
+}
